@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+
+li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: black;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(0, 255, 0);
+}
+
+.ul-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.barra-ricerca {
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 10px;
+  width: 300px;
+  border-radius: 20px;
+  background-color: black;
+  color: grey;
+  border: 1px solid rgb(0, 255, 0);
+  font-weight: bold;
+  margin-right: 80px;
+  outline: none;
+}
+
+li input:checked {
+  border: 1px solid rgb(0, 255, 0);
+}
+
+.nessun-prodotto {
+  text-align: center;
+  grid-column: 1/-1;
+  font-size: 3rem;
+  padding: 28px;
+  font-weight: bold;
+}
+
+/* MAIN   */
+
+.main-container {
+  background: linear-gradient(45deg, rgb(89, 89, 89), #e5e5e5);
+}
+
+.titoli-container {
+  text-align: center;
+  padding: 4rem;
+  font-size: 1.5rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 3rem;
+  place-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+.card {
+  display: grid;
+  place-content: center;
+}
+.card:hover {
+  font-size: 1.5rem;
+  transition: 0.5s ease;
+}
+
+.card p {
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.immagini {
+  height: 300px;
+  width: 240px;
+  margin-top: 2rem;
+  border: 1px solid;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px rgb(6, 3, 3);
+}
+
+.immagini:hover {
+  height: 320px;
+  width: 260px;
+  transition: 0.5s ease;
+  border: 5px solid lightgreen;
+  box-shadow: 0px 3px 10px rgb(0, 255, 0);
+}
+
+.card:hover .immagini {
+  height: 320px;
+  width: 260px;
+  transition: 0.5s ease;
+  border: 5px solid lightgreen;
+}
+.addToCartButton {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: black;
+  color: rgb(0, 255, 0);
+  cursor: pointer;
+  font-weight: bold;
+}
+.card:hover .addToCartButton {
+  font-size: 1rem;
+  transition: 0.5s ease;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*CARRELLO ACQUISTI*/
+
+.titolo-carrello {
+  text-align: center;
+  font-size: 3rem;
+  padding: 4rem;
+  margin-bottom: 30px;
+}
+
+.carrello-container {
+  background: linear-gradient(45deg, rgb(89, 89, 89), #e5e5e5);
+}
+
+.acquisti-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.immagini-carrello {
+  height: 300px;
+  width: 240px;
+  border-radius: 20px;
+  box-shadow: 0px 3px 10px rgb(0, 255, 0);
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.carrello-descrizione {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 0.5rem;
+  font-weight: bold;
+}
+
+.counter-container {
+  text-align: center;
+}
+
+.input-counter {
+  width: 40px;
+  font-weight: bold;
+  padding: 5px;
+
+  background-color: black;
+  color: rgb(0, 255, 0);
+  text-align: center;
+}
+.pulsante-counter {
+  padding: 5px;
+  cursor: pointer;
+  background-color: black;
+  color: rgb(0, 255, 0);
+}
+
+.titolo-carrellovuoto {
+  text-align: center;
+  padding: 76px;
+  margin-top: 20px;
+}
+
+.totale-acquisti {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.button-shop {
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 150px;
+  border-radius: 30px;
+  background-color: black;
+  color: rgb(0, 255, 0);
+  cursor: pointer;
+}
+
+.button-shop2 {
+  padding: 10px;
+  margin-bottom: 5px;
+  width: 150px;
+  border-radius: 30px;
+  background-color: black;
+  color: rgb(0, 255, 0);
+  cursor: pointer;
+  margin-bottom: 60px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: black;
+  color: rgb(0, 255, 0);
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem;
+}
